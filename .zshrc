@@ -119,8 +119,8 @@ export FZF_DEFAULT_COMMAND="find . -path '*/\.*' -type d -prune -o -type f -prin
 # Using highlight (http://www.andre-simon.de/doku/highlight/en/highlight.html)
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 if [ "$(uname 2> /dev/null)" = "Linux" ]; then
-    source $HOME/dotfiles/key-bindings.zsh
-    source $HOME/dotfiles/completion.zsh
+    source $HOME/.oh-my-zsh/lib/key-bindings.zsh
+    source $HOME/.oh-my-zsh/lib/completion.zsh
 fi
  
 # Brew config
