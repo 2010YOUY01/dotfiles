@@ -4,10 +4,16 @@ path=$(realpath "$path")
 
 mkdir $HOME/.config
 mkdir $HOME/.config/nvim
+
+rm -rf ~/.oh-my-zsh
+mkdir ~/.oh-my-zsh
+mkdir ~/.oh-my-zsh/themes
+mkdir ~/.oh-my-zsh/lib
+
 # oh-my-zsh theme
 ln -s $path/yyt.zsh-theme $HOME/.oh-my-zsh/themes/yyt.zsh-theme
-ln -s $path/yyt.zsh-theme $HOME/.oh-my-zsh/lib/key-bindings.zsh
-ln -s $path/yyt.zsh-theme $HOME/.oh-my-zsh/lib/completion.zsh
+ln -s $path/key-bindings.zsh $HOME/.oh-my-zsh/lib/key-bindings.zsh
+ln -s $path/completion.zsh $HOME/.oh-my-zsh/lib/completion.zsh
 ln -s $path/.tmux.conf $HOME/.tmux.conf
 ln -s $path/.zshrc $HOME/.zshrc
 # Editor
