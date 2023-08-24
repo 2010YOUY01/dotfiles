@@ -5,6 +5,9 @@ path=$(realpath "$path")
 mkdir $HOME/.config
 mkdir $HOME/.config/nvim
 
+rm ~/.oh-my-zsh/lib/key-bindings.zsh
+rm ~/.oh-my-zsh/lib/completion.zsh
+
 # oh-my-zsh theme
 ln -s $path/yyt.zsh-theme $HOME/.oh-my-zsh/themes/yyt.zsh-theme
 ln -s $path/key-bindings.zsh $HOME/.oh-my-zsh/lib/key-bindings.zsh
